@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   <style>
+   * {
+  border-radius: 0 !important;
+}
+
+    body{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      color: #2A315B;
+      background-color: #4DA399;
+    }
+    #header{
+      background-image: url("images/img3.jpg");
+      background-size: cover;
+      font-size: 25px;
+      font-weight: bolder;
+      color: white;
+      padding-top: 100px;
+      height: 670px;
+      text-align: center;
+      
+    }
+    #mynav{
+     
+      font-size: 20px;
+    }
+    
+    #mynav{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    }
+
+    #mynav.shrink {
+      font-size: 15px;
+    min-height: 40px;
+    }
+
+    #home{
+      padding: 50px;
+      background-color: #4DA399;
+      position: relative;
+      z-index: 1;
+    }
+
+    #signup{
+      position: relative;
+      top: 100px;
+      left: 460px;
+    }
+    #email{
+      width: 300px;
+    }
+
+    #feats{
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #4DA399;
+
+    }
+    .card{
+      border-color: #2A315B;
+    }
+    .card-img-top{
+      width: 100%;
+    }
+    
+    #contact{
+      padding-top: 50px;
+      height: 500px;
+      background-color: lightblue;
+      position: relative;
+      z-index: 1;
+    }
+    
+#home:before, #contact:before, #contact:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+#contact:before, #home:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+#contact:after{
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+    #download{
+      height: 250px;
+      background-color: #4DA399;
+      padding-top: 50px;
+
+    }
+    #android{
+      color: green;
+    }
+    #apple{
+      color: darkgrey;
+    }
+
+   </style>
+  </head>
+<body data-spy="scroll" data-target="#mynav" data-offset="60">
+
+<nav id="mynav" class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+  <a class="navbar-brand" href="#home">MyApp</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#feats">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#download">Download App</a>
+      </li>
+    </ul>
+    <form id="login" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Email" aria-label="email">
+      <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+      <button class="btn btn-success my-2 my-sm-0" type="login">login</button>
+    </form>
+  </div>
+</nav>
+<div id="header" class="jumbotron-fluid">
+  <h1 class="display-3">My Awesome app</h1>
+  <p class="lead">You! yes you! download this app right now !</p>
+  <hr class="my-y-4"><br>
+  <p>Want to know more! join the facebook page!</p>
+    <form id="signup" class="form-inline">
+    <div class="form-group">
+      <label class="sr-only" for="email">email</label>       
+          <input id="email" class="form-control" type="email" placeholder="your e-mail">
+    </div>
+      <button class="btn btn-primary" type="submit">Sign up</button>
+    </form>
+</div>   
+  <div id="home" align="center">
+      <h1>Why this App is so awesome</h1><br>
+    
+      <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+    Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, </p>
+  </div>
+
+<div id="feats" class="container-fluid">
+  <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="images/img.jpg" alt="Card image cap">
+        <div class="card-body">
+          
+          <h3 class="card-text"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Some title</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+      <div class="card">
+        <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Some title</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Some title</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="container-fluid">
+      <h1 align="center">Contact</h1><br>
+    <form>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="password" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text" class="col-sm-2 col-form-label">Commentaire</label>
+      <div class="col-sm-10">
+        <textarea type="text" class="form-control" id="text" placeholder="Votre message" rows = "3"></textarea> 
+      </div>
+    </div>
+    
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+    </form>
+    </div>
+  <div id="download" class="container-fluid" align="center">
+    <h3>Here to download the app!</h3>
+    <p class="lead">yes! really do it!</p>
+    <a id="android" href=""><i class="fa fa-android fa-5x" aria-hidden="true"></i></a>
+
+    <a id="apple" href=""><i class="fa fa-apple fa-5x" aria-hidden="true"></i><a>
+  </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $('nav').addClass('shrink');
+      $('#login').hide();
+    } else {
+      $('nav').removeClass('shrink');
+      $('#login').show();
+    }
+  });
+
+
+</script>
+  </body>
+</html>
