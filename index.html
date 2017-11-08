@@ -254,9 +254,14 @@
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
       $('nav').addClass('shrink');
+      $('nav').removeClass('navbar-dark');
+      $('nav').addClass('navbar-inverse');
       $('#login').hide();
     } else {
+      
       $('nav').removeClass('shrink');
+      $('nav').removeClass('navbar-inverse');
+      $('nav').addClass('navbar-dark');
       $('#login').show();
     }
   });
